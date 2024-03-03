@@ -1,5 +1,5 @@
 import Image from "next/image";
 
 export default function Home() {
-	return <div>this is from main page</div>;
+	return <div className="mt-0">this is from main page</div>;
 }

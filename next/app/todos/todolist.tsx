@@ -23,5 +23,4 @@ const Todolist = async () => {
 		</div>
 	);
 };
-
 export default Todolist;

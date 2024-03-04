@@ -1,6 +1,23 @@
-import Image from "next/image";
-import Link from "next/link";
+import { Suspense } from "react";
+import Todolist from "./(users)/todos/todolist";
+Suspense;
 
 export default function Home() {
-	return <div className="mt-0">this is from main page</div>;
+	return (
+		<>
+			<Suspense fallback={<p>Memuat..</p>}>
+				<h1>Loading Todos</h1>
+				<div className="flex space-x-2">
+					<Todolist />
+				</div>
+			</Suspense>
+
+			<Suspense fallback={<p>Memuat..</p>}>
+				<h1>Loading hsopping Trolley</h1>
+				<div className="flex space-x-2">
+					<Todolist />
+				</div>
+			</Suspense>
+		</>
+	);
 }

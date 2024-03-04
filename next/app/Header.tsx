@@ -9,10 +9,10 @@ const Header = () => {
 			</div>
 			<ul className="flex text-white font-bold  space-x-3 text-lg">
 				<li className="hover:bg-slate-300">
-					<Link href={"/"}>Home</Link>
+					<Link href={`/todos`}>TODOS</Link>
 				</li>
 				<li className="hover:bg-slate-300">
-					<Link href={"/"}>About</Link>
+					<Link href={"/todos"}>About</Link>
 				</li>
 			</ul>
 		</header>

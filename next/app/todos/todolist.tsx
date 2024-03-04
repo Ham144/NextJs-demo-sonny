@@ -17,7 +17,7 @@ const Todolist = async () => {
 		<div>
 			{response.map((todo: Todo) => (
 				<ul key={todo.id}>
-					<Link href={`todos/${todo.id}`}>{todo.todo}</Link>
+					<Link href={`${todo.id}`}>todo : {todo.id}</Link>
 				</ul>
 			))}
 		</div>

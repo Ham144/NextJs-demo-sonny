@@ -5,7 +5,7 @@ const Todo = () => {
 	return (
 		<div>
 			{/* @ts-ignore */}
-			<Todolist />
+			<h1>This is where the todos appear</h1>
 		</div>
 	);
 };
